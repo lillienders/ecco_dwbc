@@ -112,3 +112,11 @@ def getsize(obj):
                 need_referents.append(obj)
         objects = get_referents(*need_referents)
     return size
+def get_na_tile(ds):
+    """
+    Subset North Atlantic from ECCO native grid (tile = 10) 
+    """
+    return(ds.isel(tile = 10))
+
+def subset_tgb_box(ds):
+    return(ds.sel(j = slice(71.75,84.25),i = slice(41.75,50.25),j_g = slice(71.75,84.25),i_g = slice(41.75,50.25)))
