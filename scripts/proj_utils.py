@@ -134,3 +134,4 @@ def proc_dataset(ds, face = 'north'):
         mask_da = xr.open_dataarray('../data/north_face_mask.nc')
         ds = ds.where(mask_da)
     return(ds)
+
