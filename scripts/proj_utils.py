@@ -125,7 +125,7 @@ def proc_dataset(ds, face = 'north', mask = True):
     ds = get_na_tile(ds)
     ds = subset_tgb_box(ds)
     if face == 'east':
-        ds = ds.sel(j = slice(ds.j[0]), j_g = slice(ds.j_g[0])).squeeze()
+        ds = ds.sel(j = slice(ds.j[0]-0.25,ds.j[0]+0.25), j_g = slice(ds.j_g[0]-0.25,ds.j_g[0]+0.25)).squeeze()
         if mask == 'True':
             mask_da = xr.open_dataarray('../data/east_face_mask.nc')
             ds = ds.where(mask_da)
