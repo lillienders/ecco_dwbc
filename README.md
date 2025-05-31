@@ -9,32 +9,11 @@ Lilli Enders - ECCO Summer School, May 2025
 * **`Figures/`**
 <br> (Some) output from notebooks is saved here
 
-# Recommended content for your README.md file:
+## Project Overview
 
-(you can remove the content here and above from your final project README.md file so that it begins with the Project or Team Name title below)
-
-# Project or Team Name
-
-## Project Title and Introduction
-
-Provide a brief introduction describing the proposed work. Be sure to also decribe what skills team members will get to learn and practice as part of this project.
-
-### Collaborators
-
-List all participants on the project. Here is a good space to share your personal goals for the hackweek and things you can help with.
-
-| Name | Personal goals | Can help with | Role |
-| ------------- | ------------- | ------------- | ------------- |
-| Katherine J. | I want to learn specific python libraries for working with these data  | I can help with understanding our dataset, programming in R  | Project Lead |
-| Rosalind F. | Practice leading a software project | machine learning and python (scipy, scikit-learn) | Project Lead |
-| Alan T. | learning about your dataset | GitHub, Jupyter, cloud computing | Project Helper |
-| Rachel C. | learn to use github, resolve merge conflicts | I am familiar with our dataset | Team Member  |
-| ... | ... | ... | ... |
-| ... | ... | ... | ... |
-
-### The problem
-
-Provide a few sentences describing the problem are you going to explore. If this is a technical exploration of software or data science methods, explain why this work is important in a broader context and specific applications of this work.
+The equatorward flowing Deep Western Boundary Current (DWBC) bifurcates as it interacts with the shallow topography and dynamical complexity of the Tail of the Grand Banks (TGB) south of Newfoundland. Some portion of the DWBC is thought to continue onto the Scotian Shelf, eventually influencing the shelf circulation (and potentially the Gulf Stream). It’s not clear whether variability in the transport of the DWBC onto the Scotian Shelf is inherited from the DWBC further North (i.e., in the Labrador Sea), or whether it is a result of local processes at the TGB. In this project, I investigate the representation of the DWBC near the TGB (in both the mean and anomalous senses) using ECCOv4r4. The goals of the project are: 
+* 1. Understand how much of the variability of DWBC flux onto the Scotian Shelf (across the East Face) is explained by the variability of the DWBC flux upstream of the TGB
+  2. Identify mechanisms that drive the variability in DWBC volume transport, and investigate whether they differ between the north and south faces
 
 ## Data and Methods
 
