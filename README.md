@@ -14,6 +14,8 @@ Lilli Enders - ECCO Summer School, May 2025
 The equatorward flowing Deep Western Boundary Current (DWBC) bifurcates as it interacts with the shallow topography and dynamical complexity of the Tail of the Grand Banks (TGB) south of Newfoundland. Some portion of the DWBC is thought to continue onto the Scotian Shelf, eventually influencing the shelf circulation (and potentially the Gulf Stream). It’s not clear whether variability in the transport of the DWBC onto the Scotian Shelf is inherited from the DWBC further North (i.e., in the Labrador Sea), or whether it is a result of local processes at the TGB. In this project, I investigate the representation of the DWBC near the TGB (in both the mean and anomalous senses) using ECCOv4r4. The goals of the project are: 
   1. Understand how much of the variability of DWBC flux onto the Scotian Shelf (across the East Face) is explained by the variability of the DWBC flux upstream of the TGB
   2. Identify mechanisms that drive the variability in DWBC volume transport, and investigate whether they differ between the north and south faces
+A schematic representation of the circulation near the TGB is shown below. In this project, I focus on the DWBC that makes it to the Scotian Shelf through route (1):
+<img width="309" alt="image" src="https://github.com/user-attachments/assets/bb249b29-4c93-4eb8-ad1c-91ad8e434d0c" />
 
 ## Data and Methods
 
