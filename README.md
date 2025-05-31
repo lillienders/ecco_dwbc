@@ -1,4 +1,6 @@
-# Sample Project
+# DeeP Western BoUndary Current Flux and Forcing MechanIsms iN ECCO (PUFFIN)  
+![image](https://github.com/user-attachments/assets/502739ee-2220-4fa2-9933-24fa9fc02923)
+
 
 This is an example of how teams can structure their project repositories and format their project README.md file.
 
