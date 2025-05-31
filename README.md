@@ -21,9 +21,11 @@ A schematic representation of the circulation near the TGB is shown below. In th
 
 ### Data & Tools
 
-**ECCO v4r4 outputs:** Fields of variabiles including U,V,UMASS,VMASS, T & S
-**ECCO EMU:** Adjoint, attribution, forward gradient
-**Other Tools:** OSS Tutorials, ecco_v4_py
+* **ECCO v4r4 outputs:** Fields of variabiles including U,V,UMASS,VMASS, T & S
+
+* **ECCO EMU:** Adjoint, attribution, forward gradient
+
+* **Other Tools:** OSS Tutorials, ecco_v4_py
 
 I access the ECCOv4r4 data via the AWS cloud system, and rely (heavily) on the ecco_v4_py pacakge and related tutorials (https://ecco-v4-python-tutorial.readthedocs.io/).
 
