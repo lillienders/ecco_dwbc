@@ -15,7 +15,7 @@ The equatorward flowing Deep Western Boundary Current (DWBC) bifurcates as it in
   1. Understand how much of the variability of DWBC flux onto the Scotian Shelf (across the East Face) is explained by the variability of the DWBC flux upstream of the TGB
   2. Identify mechanisms that drive the variability in DWBC volume transport, and investigate whether they differ between the north and south faces
 A schematic representation of the circulation near the TGB is shown below. In this project, I focus on the DWBC that makes it to the Scotian Shelf through route (1):
-<img width="309" alt="image" src="https://github.com/user-attachments/assets/bb249b29-4c93-4eb8-ad1c-91ad8e434d0c" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/bb249b29-4c93-4eb8-ad1c-91ad8e434d0c" />
 
 ## Data and Methods
 
