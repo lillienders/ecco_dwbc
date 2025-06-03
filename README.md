@@ -1,99 +1,52 @@
-# Sample Project
+# DeeP Western BoUndary Current Flux and Forcing MechanIsms iN ECCO (PUFFIN)  
+Lilli Enders - ECCO Summer School, May 2025
 
-This is an example of how teams can structure their project repositories and format their project README.md file.
-
-When creating a project repository from this template choose "Public" so other participants can follow progress. Add a "topic" to your repository details (click on the gear icon next to the "About" section on the repository page) to help others find your work (e.g. `ecco-hackweek-2024`).
-
-
-## Files and folders in your project repository
-
-This template provides the following suggested organizaiton structure for the project repository, but each project team is free to organize their repository as they see fit.
-
-* **`contributors/`**
-<br> Each team member can create their own folder under contributors, within which they can work on their own scripts, notebooks, and other files. Having a dedicated folder for each person helps to prevent conflicts when merging with the main branch. This is a good place for team members to start off exploring data and methods for the project.
+## Organization of this project folder: 
 * **`notebooks/`**
-<br> Notebooks that are considered delivered results for the project should go in here.
+<br> Notebooks contain most of the core workflow, pulling from the routines in /scripts 
 * **`scripts/`**
-<br> Code that is shared by the team should go in here (e.g. functions or subroutines). These will be files other than Jupyter Notebooks such as Python scripts (.py).
-* `.gitignore`
-<br> This file sets the files that will be globally ignored by `git` for the project. (e.g. you may want git to ignore temporary files or large data files, [read more about ignoring files here](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files))
-* `environment.yml`
-<br> `conda` environment description needed to run this project.
-* `README.md`
-<br> Description of the project (see suggested headings below)
-* `model-card.md`
-<br> Description (following a metadata standard) of any machine learning models used in the project
+<br> Functions and subroutines for plotting and analysis live here 
+* **`Figures/`**
+<br> (Some) output from notebooks is saved here
 
-# Recommended content for your README.md file:
+## Project Overview
 
-(you can remove the content here and above from your final project README.md file so that it begins with the Project or Team Name title below)
-
-# Project or Team Name
-
-## Project Title and Introduction
-
-Provide a brief introduction describing the proposed work. Be sure to also decribe what skills team members will get to learn and practice as part of this project.
-
-### Collaborators
-
-List all participants on the project. Here is a good space to share your personal goals for the hackweek and things you can help with.
-
-| Name | Personal goals | Can help with | Role |
-| ------------- | ------------- | ------------- | ------------- |
-| Katherine J. | I want to learn specific python libraries for working with these data  | I can help with understanding our dataset, programming in R  | Project Lead |
-| Rosalind F. | Practice leading a software project | machine learning and python (scipy, scikit-learn) | Project Lead |
-| Alan T. | learning about your dataset | GitHub, Jupyter, cloud computing | Project Helper |
-| Rachel C. | learn to use github, resolve merge conflicts | I am familiar with our dataset | Team Member  |
-| ... | ... | ... | ... |
-| ... | ... | ... | ... |
-
-### The problem
-
-Provide a few sentences describing the problem are you going to explore. If this is a technical exploration of software or data science methods, explain why this work is important in a broader context and specific applications of this work.
+The equatorward flowing Deep Western Boundary Current (DWBC) bifurcates as it interacts with the shallow topography and dynamical complexity of the Tail of the Grand Banks (TGB) south of Newfoundland. Some portion of the DWBC is thought to continue onto the Scotian Shelf, eventually influencing the shelf circulation (and potentially the Gulf Stream). It’s not clear whether variability in the transport of the DWBC onto the Scotian Shelf is inherited from the DWBC further North (i.e., in the Labrador Sea), or whether it is a result of local processes at the TGB. In this project, I investigate the representation of the DWBC near the TGB (in both the mean and anomalous senses) using ECCOv4r4. The goals of the project are: 
+  1. Understand how much of the variability of DWBC flux onto the Scotian Shelf (across the East Face) is explained by the variability of the DWBC flux upstream of the TGB
+  2. Identify mechanisms that drive the variability in DWBC volume transport, and investigate whether they differ between the north and south faces
+A schematic representation of the circulation near the TGB is shown below. In this project, I focus on the DWBC that makes it to the Scotian Shelf through route (1):
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/bb249b29-4c93-4eb8-ad1c-91ad8e434d0c" />
 
 ## Data and Methods
 
-### Data
+### Data & Tools
 
-Briefly describe and provide citations for the data that will be used (size, format, how to access).
+* **ECCO v4r4 outputs:** Fields of variabiles including U,V,UMASS,VMASS, T & S
 
-### Existing methods
+* **ECCO EMU:** Adjoint, attribution, forward gradient
 
-How would you or others traditionally try to address this problem? Provide any relevant citations to prior work.
+* **Other Tools:** OSS Tutorials, ecco_v4_py
 
-### Proposed methods/tools
+I access the ECCOv4r4 data via the AWS cloud system, and rely (heavily) on the ecco_v4_py pacakge and related tutorials (https://ecco-v4-python-tutorial.readthedocs.io/).
 
-What new approaches would you like to implement for addressing your specific question(s) or application(s)?
+### Background Reading
+* **Interior pathways of the North Atlantic meridional overturning circulation (Bower et al., 2009)**
+* Water mass components of the North Atlantic deep western boundary current (Pickart, 1992)
+* Deep Western Boundary Current variability at Cape Hatteras (Pickart & Watts, 1990)
+* Changes in the Deep Western Boundary Current at 53°N (Myers & Kulan, 2012)
+* The Deep Western Boundary Current in the Labrador Sea From Observations and a High-Resolution Model (Handmann et al., 2018)
+* Float trajectories in the deep western boundary current and deep equatorial jets of the tropical Atlantic (Richardson & Fratantoni, 1999)
 
-Will your project use machine learning methods? If so, we invite you to create a [model card](model-card.md)!
-
-### Additional resources or background reading
-
-Optional: links to manuscripts or technical documents providing background information, context, or other relevant information.
-
-## Project goals and tasks
-
-### Project goals
-
-List the specific project goals or research questions you want to answer. Think about what outcomes or deliverables you'd like to create (e.g. a series of tutorial notebooks demonstrating how to work with a dataset, results of an anaysis to answer a science question, an example of applying a new analysis method, or a new python package).
-
-* Goal 1
-* Goal 2
-* ...
-
-### Tasks
-
-What are the individual tasks or steps that need to be taken to achieve each of the project goals identified above? What are the skills that participants will need or will learn and practice to complete each of these tasks? Think about which tasks are dependent on prior tasks, or which tasks can be performed in parallel.
-
-* Task 1 (all team members will learn to use GitHub)
-* Task 2 (team members will use the scikit-learn python library)
-  * Task 2a (assigned to team member A)
-  * Task 2b (assigned to team member B)
-* Task 3
-* ...
+### Proposed Workflow
+1. Identify a control volume around the Tail of Grand Banks, where the DWBC is thought to bifurcate
+2. Visualize velocity sections across the North and East edges of the control volume. The North face will reflect the 'total' inflow of DWBC into the control volume, and the East face will reflect the portion of the 'total' DWBC that arrives on the Scotian Shelf.
+3. Identify the climatological position of the DWBC across each face (North and East). Using this climatological position, create a mask for each face.
+4. Calculate the volume flux of DWBC through each face using masks. Compute statistical quantities (correlation, wavelets, spectra) to understand the variability of the flux in each case.
+5. Using the flux across each face as the cost function, use EMU attribution to assess the relative influences of wind/heat flux/fresh water flux/etc on flux. Compare between two faces.
+6. Compute model adjoint, using flux across each face as cost functions to diagnose the spatial patterns associated with flux forcings. 
 
 ## Project Results
+Transects across faces (**see** lat_lon_transects.ipynb, native_transects.ipynb)
 
-Use this section to briefly summarize your project results. This could take the form of describing the progress your team made to answering a research question, developing a tool or tutorial, interesting things found in exploring a new dataset, lessons learned for applying a new method, personal accomplishments of each team member, or anything else the team wants to share.
 
-You could include figures or images here, links to notebooks or code elsewhere in the repository (such as in the [notebooks](notebooks/) folder), and information on how others can run your notebooks or code.
+<img width="393" alt="image" src="https://github.com/user-attachments/assets/2164b49a-4711-4285-aff4-d9038b54ce64" />
