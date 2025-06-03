@@ -39,4 +39,4 @@ def calc_flux_spec(flux_ts):
         'method': f'Welch; nperseg={nper}, Hann window, detrended constant',
         }
     )
-    return(spectrum)
+    return(freq, psd, spectrum)

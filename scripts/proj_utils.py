@@ -119,19 +119,19 @@ def get_na_tile(ds):
     return(ds.isel(tile = 10))
 
 def subset_tgb_box(ds):
-    return(ds.sel(j = slice(71.75,84.25),i = slice(41.75,52.25),j_g = slice(71.75,84.25),i_g = slice(41.75,52.25)))
+    return(ds.sel(j = slice(71.75,84.25),i = slice(41.75,54.25),j_g = slice(71.75,84.25),i_g = slice(41.75,60.25)))
 
 def proc_dataset(ds, face = 'north'):
     ds = get_na_tile(ds)
     ds = subset_tgb_box(ds)
     if face == 'east':
         ds = ds.sel(j = slice(ds.j[0]-0.25,ds.j[0]+0.25), j_g = slice(ds.j_g[0]-0.25,ds.j_g[0]+0.25)).squeeze()
-        mask_da = xr.open_dataarray('../data/east_face_mask.nc')
-        ds = ds.where(mask_da)
+        #mask_da = xr.open_dataarray('../data/east_face_mask.nc')
+        #ds = ds.where(mask_da)
                       
     elif face == 'north':
         ds = ds.sel(i = slice(ds.i[0]), i_g = slice(ds.i_g[0])).squeeze()
-        mask_da = xr.open_dataarray('../data/north_face_mask.nc')
-        ds = ds.where(mask_da)
+        #mask_da = xr.open_dataarray('../data/north_face_mask.nc')
+        #ds = ds.where(mask_da)
     return(ds)
 
