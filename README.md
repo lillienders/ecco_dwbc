@@ -46,4 +46,7 @@ I access the ECCOv4r4 data via the AWS cloud system, and rely (heavily) on the e
 6. Compute model adjoint, using flux across each face as cost functions to diagnose the spatial patterns associated with flux forcings. 
 
 ## Project Results
+Transects across faces (**see** lat_lon_transects.ipynb, native_transects.ipynb)
+
+
 <img width="393" alt="image" src="https://github.com/user-attachments/assets/2164b49a-4711-4285-aff4-d9038b54ce64" />
