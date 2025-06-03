@@ -46,7 +46,4 @@ I access the ECCOv4r4 data via the AWS cloud system, and rely (heavily) on the e
 6. Compute model adjoint, using flux across each face as cost functions to diagnose the spatial patterns associated with flux forcings. 
 
 ## Project Results
-
-Use this section to briefly summarize your project results. This could take the form of describing the progress your team made to answering a research question, developing a tool or tutorial, interesting things found in exploring a new dataset, lessons learned for applying a new method, personal accomplishments of each team member, or anything else the team wants to share.
-
-You could include figures or images here, links to notebooks or code elsewhere in the repository (such as in the [notebooks](notebooks/) folder), and information on how others can run your notebooks or code.
+<img width="393" alt="image" src="https://github.com/user-attachments/assets/2164b49a-4711-4285-aff4-d9038b54ce64" />
