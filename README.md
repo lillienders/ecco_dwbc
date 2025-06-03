@@ -29,19 +29,21 @@ A schematic representation of the circulation near the TGB is shown below. In th
 
 I access the ECCOv4r4 data via the AWS cloud system, and rely (heavily) on the ecco_v4_py pacakge and related tutorials (https://ecco-v4-python-tutorial.readthedocs.io/).
 
-### Existing methods
+### Background Reading
+* **Interior pathways of the North Atlantic meridional overturning circulation (Bower et al., 2009)**
+* Water mass components of the North Atlantic deep western boundary current (Pickart, 1992)
+* Deep Western Boundary Current variability at Cape Hatteras (Pickart & Watts, 1990)
+* Changes in the Deep Western Boundary Current at 53°N (Myers & Kulan, 2012)
+* The Deep Western Boundary Current in the Labrador Sea From Observations and a High-Resolution Model (Handmann et al., 2018)
+* Float trajectories in the deep western boundary current and deep equatorial jets of the tropical Atlantic (Richardson & Fratantoni, 1999)
 
-How would you or others traditionally try to address this problem? Provide any relevant citations to prior work.
-
-### Proposed methods/tools
-
-What new approaches would you like to implement for addressing your specific question(s) or application(s)?
-
-Will your project use machine learning methods? If so, we invite you to create a [model card](model-card.md)!
-
-### Additional resources or background reading
-
-Optional: links to manuscripts or technical documents providing background information, context, or other relevant information.
+### Proposed Workflow
+1. Identify a control volume around the Tail of Grand Banks, where the DWBC is thought to bifurcate
+2. Visualize velocity sections across the North and East edges of the control volume. The North face will reflect the 'total' inflow of DWBC into the control volume, and the East face will reflect the portion of the 'total' DWBC that arrives on the Scotian Shelf.
+3. Identify the climatological position of the DWBC across each face (North and East). Using this climatological position, create a mask for each face.
+4. Calculate the volume flux of DWBC through each face using masks. Compute statistical quantities (correlation, wavelets, spectra) to understand the variability of the flux in each case.
+5. Using the flux across each face as the cost function, use EMU attribution to assess the relative influences of wind/heat flux/fresh water flux/etc on flux. Compare between two faces.
+6. Compute model adjoint, using flux across each face as cost functions to diagnose the spatial patterns associated with flux forcings. 
 
 ## Project goals and tasks
 
